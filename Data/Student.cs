@@ -1,4 +1,5 @@
-﻿namespace EduTrack.Data
+﻿
+namespace EduTrack.Data
 {
     public class Student
     {
@@ -8,5 +9,10 @@
         public string? Surname { get; set; }
         public string? Email { get; set; }
         public string? Phone { get; set; }
+
+        internal async Task SaveChangesAsync()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
